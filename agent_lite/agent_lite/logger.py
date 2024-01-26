@@ -1,13 +1,20 @@
-from abc import ABC, abstractmethod 
+from abc import abstractmethod 
+from typing import TypeVar
+from pydantic import BaseModel
 
+#Source generic try:
+#TODO: Make this type more strict
+S = TypeVar("S")
 
 '''
     Logger will send an event object to some data store (Kafka, RDB, etc)
 '''
-class Logger(ABC):
+class Logger(BaseModel):
+
+    sources: S 
 
     @abstractmethod  
-    def log(event: Object, sources: Object):
+    def log(self, event: object):
         '''
         event: Event Object
         sources: Dict of sources to log to (Kafka, RDB, etc)
@@ -15,10 +22,12 @@ class Logger(ABC):
         pass
 
 class PrintLogger(Logger):
-    def log({'message': "something", 'time': "now"}, sources: {'kafka': None}):
+    def log(self, event: object):
         #Send message to kafka 
         pass
 
 
 if __name__ == "__main__":
     #TODO: Try doing this with print statements first
+    logger = PrintLogger(sources = {"what": "else"})
+    print(logger.log({'message': "something", 'time': "now"}))
