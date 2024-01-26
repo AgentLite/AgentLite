@@ -19,3 +19,7 @@ Like React, you can use as little or as much of this library as you'd like. Pers
 - Tools for LLMs to use
 - Simple typings for chains of agent steps
 - Serializable chains of arbitrary functions
+
+## Feedback
+Just shoot me a Linkedin message, profile here: https://www.linkedin.com/in/elliotkang7/
+I'll try to answer every message, but no guarantees.
