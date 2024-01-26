@@ -22,4 +22,3 @@ Like React, you can use as little or as much of this library as you'd like. Pers
 
 ## Feedback
 Just shoot me a Linkedin message, profile here: https://www.linkedin.com/in/elliotkang7/
-<br>I'll try to answer every message, but no guarantees.
