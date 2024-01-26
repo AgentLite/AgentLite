@@ -20,5 +20,8 @@ Like React, you can use as little or as much of this library as you'd like. Pers
 - Simple typings for chains of agent steps
 - Serializable chains of arbitrary functions
 
+## How to Contribute
+Haven't thought of this yet, but check the Feedback section for now.
+
 ## Feedback
 Just shoot me a Linkedin message, profile here: https://www.linkedin.com/in/elliotkang7/
