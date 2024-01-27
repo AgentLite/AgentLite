@@ -14,8 +14,11 @@ def basic_node2(context: BaseModel):
         print(2)
     return chain_action
 
+#Writing a combinator + functools.reduce to pipe functions
+#This is also known as a combinator in lambda calculus
 def pipe(*functions):
-    return reduce(lambda f, g: lambda x: g(f(x)), functions, lambda x: x)
+    return reduce(lambda f, g: lambda x: g(f(x)), functions)
+
 
 if __name__ == "__main__":
     resource_obj = Resource(num_threads = 4)
