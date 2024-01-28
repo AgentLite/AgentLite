@@ -5,32 +5,25 @@ import dill
 
 #TODO: Add functional parts for higher order function serialization, etc.
 
-
 #TODO: Compose synchronous functions
+
+#This is the combinator for piping functions together
 def pipe(*functions):
     return(reduce(lambda f, g: lambda x: g(f(x)), functions))
 
-#TODO: Compose async functions
-
-async def async_pipe(*functions):
-    return
-
+#We end up with a function that takes argument 'y' to call the inner function
 def async_lambda(f, g):
     async def child_f(x):
         return await g(await f(x))
-    return(lambda x: child_f(x))
+    return(lambda y: child_f(y))
 
 def apipe(*functions):
     return(reduce(async_lambda, functions)) 
-
 
 #TODO: Unroll higher-order recursive functions to make them serializable
 
 
 #TODO: Serialize any function
-
-
-
 
 
 #TODO: Testing Grounds
@@ -46,8 +39,6 @@ async def print2(x):
     print("Hello")
     return
 
-
-
 if __name__ == "__main__":
     #TODO: Run mini-experiments on testing these
     async def trythis():
@@ -55,8 +46,6 @@ if __name__ == "__main__":
         print(inspect.iscoroutinefunction(exp))
         print(await exp(2))
         return
-    #print(apipe(plus1, print1))
-
     #See, it still runs with asyncio.run :)
     asyncio.run(apipe(plus1, print1, print2)(1))
     #TODO: Export tests to /tests folder
