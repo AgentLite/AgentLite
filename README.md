@@ -2,12 +2,7 @@
 Lightweight, generic typings and utils for building custom agents in your app's backend.
 
 ## Installation
-The simplest way is to install the package through a regular pip install.
-```
-pip install agent-lite
-```
-
-Alternatively, you can build the project from source.
+You can build the project from source for now. I'll put it up on PyPi soon.
 
 ## Use Cases
 - Building custom agents that you have fine-grained control over
@@ -18,7 +13,7 @@ Like React, you can use as little or as much of this library as you'd like. Pers
 ## Basic Functionality
 - Tools for LLMs to use
 - Simple typings for chains of agent steps
-- Serializable chains of arbitrary functions
+- Serializable chains of arbitrary functions (use ```cloudpickle``` to serialize, ```pickle``` to deserialize)
 
 ## How to Contribute
 Haven't thought of this yet, but check the Feedback section for now.
