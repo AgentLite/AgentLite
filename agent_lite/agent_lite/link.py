@@ -15,7 +15,3 @@ class Link(BaseModel):
             Main method for executing the Link in the LLM chain
         '''
         pass
-    
-    #TODO: In the future, we might we able to use LLMs to evaluate chains of functions.
-    def backward(self):
-        pass
