@@ -1,6 +1,6 @@
 from typing import TypeVar, Callable
 
-
+#Prompt is a type of function that takes arguments and returns a string
 Prompt = Callable[..., str]
 
 def simple_prompt(name: str):
