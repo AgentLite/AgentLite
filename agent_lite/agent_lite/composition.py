@@ -20,12 +20,6 @@ def async_lambda(f, g):
 def apipe(*functions):
     return(reduce(async_lambda, functions)) 
 
-#TODO: Unroll higher-order recursive functions to make them serializable
-
-
-#TODO: Serialize any function
-
-
 #TODO: Testing Grounds
 async def plus1(x):
     print("PLEASE")
