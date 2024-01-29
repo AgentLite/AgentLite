@@ -4,8 +4,8 @@ from .tool import Tool
 
 
 class Context(BaseModel):
-    model: Optional[Any] = {}
-    logger: Optional[Any]  = {} 
+    models: Optional[dict[str, Any]] = {} 
+    loggers: Optional[dict[str, Any]] = {} 
     stores: Optional[dict[str, Any]] = {} 
     tools: Optional[dict[str, Any]] = {}
 
