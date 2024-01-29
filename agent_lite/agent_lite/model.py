@@ -33,7 +33,7 @@ class LLM(BaseModel):
     
     #TODO: Write streaming version
 
-class OpenAI(LLM):
+class OpenAIModel(LLM):
     '''
         Example LLM using OpenAI's GPT models
     '''
