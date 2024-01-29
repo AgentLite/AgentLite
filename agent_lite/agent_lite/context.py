@@ -1,12 +1,11 @@
 from pydantic import BaseModel
-from typing import Any
+from typing import Any, Optional
 from .tool import Tool
 
 
 class Context(BaseModel):
-    model: Any #This should be a Model object
-    logger: Any #This should be a Logger object 
-    stores: Any #This should be a Stores object
-    tools: dict[str, Tool]
-
+    model: Optional[Any]
+    logger: Optional[Any] 
+    stores: Optional[dict[str, Any]]
+    tools: Optional[dict[str, Any]]
 
