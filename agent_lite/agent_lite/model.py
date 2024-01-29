@@ -17,8 +17,8 @@ M = TypeVar("M")
 class LLM(BaseModel):
     async_session: Optional[aiohttp.ClientSession] = None
     http_session: Optional[requests.Session] = None
-    api_key: Optional[str] = None
-    llm_args: Optional[dict[str, A]] = None
+    api_key: Optional[str] = ""
+    llm_args: Optional[dict[str, A]] = {}
 
     class Config:
         arbitrary_types_allowed = True
