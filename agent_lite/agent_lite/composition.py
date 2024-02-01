@@ -1,7 +1,6 @@
 from functools import reduce
 import asyncio
 import inspect
-import dill
 
 #TODO: Add functional parts for higher order function serialization, etc.
 
@@ -9,13 +8,13 @@ import dill
 
 #This is the combinator for piping functions together
 def pipe(*functions):
-    return(reduce(lambda f, g: lambda x: g(f(x)), functions))
+    return(reduce(lambda f, g: lambda *args, **kwargs: g(f(*args, **kwargs)), functions))
 
 #We end up with a function that takes argument 'y' to call the inner function
 def async_lambda(f, g):
     async def child_f(x):
         return await g(await f(x))
-    return(lambda y: child_f(y))
+    return(lambda *args, **kwargs: child_f(*args, **kwargs))
 
 def apipe(*functions):
     return(reduce(async_lambda, functions)) 
