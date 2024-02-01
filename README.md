@@ -8,7 +8,7 @@ You can build the project from source for now. I'll put it up on PyPi soon.
 - Building custom LLM chains that you have fine-grained control over
 - Using this library as a complementary extension to LlamaIndex and Langchain integrations
 
-Like React, you can use as little or as much of this library as you'd like. Personally, I think simple structure for composable agents is sorely needed in the Generative AI space (as of early 2024).
+Like React, you can use as little or as much of this library as you'd like. Personally, I think simple structure for composable chains is sorely needed in the Generative AI space (as of early 2024).
 
 ## Basic Functionality
 - Tools for LLMs to use
