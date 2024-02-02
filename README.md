@@ -1,6 +1,8 @@
 # agent_lite
 Lightweight, generic typings and utils for building custom agents in your app's backend. This is meant to be complementary of mainstream RAG/agent frameworks. I just don't have the time or energy to write 200+ integrations.
 
+Support for Agents doesn't really exist right now. This is mainly a library to simplify RAG for now.
+
 ## Installation
 You can build the project from source for now. Version 0.1.0 is also up on PyPi now.
 
