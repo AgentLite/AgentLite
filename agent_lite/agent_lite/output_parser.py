@@ -1,5 +1,8 @@
 import json
 
+class OutputParserError(Exception):
+    pass
+
 def parse_json(text):
     text = text.strip()
 
