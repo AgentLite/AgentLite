@@ -93,7 +93,7 @@ if __name__ == "__main__":
     print(kg_prompt(products[0], nodes, relations)) 
     async def try_this():
         llm_args = {
-            'model': 'gpt-3.5-turbo',
+            'model': 'gpt-4',
             'temperature': 0.1
         }
         async_session = aiohttp.ClientSession()
