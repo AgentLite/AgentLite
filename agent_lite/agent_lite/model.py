@@ -76,10 +76,10 @@ if __name__ == "__main__":
         }
         session = requests.Session()
         async_session = aiohttp.ClientSession()
-        llm = OpenAI(http_session = session, async_session = async_session, llm_args = llm_args, api_key = os.environ.get('OPENAI_API_TOKEN', ""))
+        llm = OpenAIModel(http_session = session, async_session = async_session, llm_args = llm_args, api_key = os.environ.get('OPENAI_API_TOKEN', ""))
         message_history = []
 
         #TODO: Try Async predict
-        await llm.async_predict("Hello!", [])
+        print(await llm.async_predict("Hello!", []))
         await async_session.close()
     asyncio.run(try_this())
