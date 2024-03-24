@@ -16,6 +16,7 @@ Like React, you can use as little or as much of this library as you'd like. Pers
 - Tools for LLMs to use
 - Simple typings for chains of agent steps (use ```apipe()``` in ```composition.py```)
 - Serializable chains of arbitrary functions (use ```cloudpickle``` to serialize, ```pickle``` to deserialize)
+- Function tracing can be done with ```trace``` Python lib.
 
 ## How to Contribute
 Haven't thought of this yet, but check the Feedback section for now.
