@@ -18,8 +18,8 @@ Like React, you can use as little or as much of this library as you'd like. Pers
 - Function tracing can be done with ```trace``` Python lib.
 
 ## To-do
-[ ] LLM Tools
-[ ] Function Calling
+- [ ] LLM Tools
+- [ ] Function Calling
 
 ## How to Contribute
 Haven't thought of this yet, but check the Feedback section for now.
