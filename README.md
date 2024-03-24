@@ -19,6 +19,7 @@ Like React, you can use as little or as much of this library as you'd like. Pers
 
 ## To-do
 - [ ] LLM Tools
+- [ ] Token tracing
 - [ ] Function Calling
 
 ## How to Contribute
