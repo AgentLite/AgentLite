@@ -40,5 +40,5 @@ if __name__ == "__main__":
         print(await exp(2))
         return
     #See, it still runs with asyncio.run :)
-    asyncio.run(apipe(plus1, print1, print2)(1))
+    asyncio.run(trythis())
     #TODO: Export tests to /tests folder
