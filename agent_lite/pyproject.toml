@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.7"
-pydantic = "<2"
+pydantic = ">=2"
 aiohttp = ">=3.6.0"
 asyncio = ">=3.0.0"
 
